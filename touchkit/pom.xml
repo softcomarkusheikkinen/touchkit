@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.vaadin.touchkit</groupId>
     <artifactId>touchkit</artifactId>
-    <version>5.0.5-SNAPSHOT</version>
+    <version>5.0.5-jsoup</version>
     <packaging>jar</packaging>
     <name>TouchKit</name>
     <organization>
@@ -82,8 +82,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <vaadin.version.maven>8.14.3</vaadin.version.maven>
-        <vaadin.plugin.version>8.14.3</vaadin.plugin.version>
+        <vaadin.version.maven>8.18.0</vaadin.version.maven>
+        <vaadin.plugin.version>8.18.0</vaadin.plugin.version>
         <snapshot.repository.url>http://oss.sonatype.org/content/repositories/vaadin-snapshots/</snapshot.repository.url>
         <jetty.version>9.2.14.v20151106</jetty.version>
         <Implementation-Version>${project.version}</Implementation-Version>
@@ -208,6 +208,7 @@
                     </execution>
                 </executions>
             </plugin>
+            <!--
             <plugin>
                 <groupId>org.apache.karaf.tooling</groupId>
                 <artifactId>karaf-maven-plugin</artifactId>
@@ -230,6 +231,7 @@
                     </execution>
                 </executions>
             </plugin>
+            -->
             <!-- Compiles your custom GWT components with the GWT compiler -->
             <plugin>
                 <groupId>com.vaadin</groupId>
